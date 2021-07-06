@@ -247,7 +247,7 @@ public class GuiManager implements Manager, GameScreenAPI {
                 return false;
             }
         }
-        if (System.currentTimeMillis() - lastRepair < main.config.GENERAL.SAFETY.WAIT_AFTER_REVIVE * 1000) {
+        if (System.currentTimeMillis() - lastRepair < main.config.GENERAL.SAFETY.WAIT_AFTER_REVIVE * 1000L) {
             validTime = System.currentTimeMillis();
             return false;
         } else if (hero.locationInfo.isLoaded()
